@@ -185,6 +185,8 @@ If you'd like to make sure that the Webhook request comes from Telegram, we reco
 
 로컬호스트를 외부화함 -> **로컬이 열렸을때만 , 이제 로컬호스트가 아니라 어디에서나 접속가능**
 
+*해당 engrok.exe를 프로젝트 파일에 복사하여 옮긴다.*
+
 https://ngrok.com/
 
 1. ngrok에 회원정보 등록
@@ -268,15 +270,39 @@ curl "https://openapi.naver.com/v1/papago/n2mt" \
 
 
 
+### chat-bot 배포: 한 계정에 하나밖에 등록 못합니다!
+
+[pythonanywhere](https://www.pythonanywhere.com/): 배포를 쉽게 해주는 사이트
+
+![1562915849357](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562915849357.png)
 
 
 
+Add a new web app 클릭하여 원하는 설정으로 Next
 
+![1562916012441](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562916012441.png)
 
+하여 코드 전체 복사
 
+다른 모듈은 추가로 설치 해주어야 한다.
 
+console로 들어가서 설치해야 한다.
 
+![1562916628325](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562916628325.png)
 
+.env 옮기고
+
+![1562916858576](C:\Users\student\AppData\Roaming\Typora\typora-user-images\1562916858576.png)
+
+original url 변경:
+
+801216085:AAH8Uj0wEeNh-wXZZIYu40NOJoPuXSrgF-M/setWebhook?url=https://7611d355.ngrok.io/801216085:AAH8Uj0wEeNh-wXZZIYu40NOJoPuXSrgF-M
+
+http://tesschung.pythonanywhere.com/
+
+주소 얻어서 **https**여야한다.
+
+https://api.telegram.org/bot801216085:AAH8Uj0wEeNh-wXZZIYu40NOJoPuXSrgF-M/setWebhook?url=https://tesschung.pythonanywhere.com/801216085:AAH8Uj0wEeNh-wXZZIYu40NOJoPuXSrgF-M
 
 
 

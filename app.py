@@ -33,7 +33,7 @@ def telegram():
                     # text -> '원하는거' -> url에 넣고 -> response
         '''
 
-        #첫 네글자가 '/번역 '일 때
+        # 첫 네글자가 '/번역 '일 때
         if text[0:4] == '/한영 ':
             headers = {
                 'X-Naver-Client-Id': NAVER_CLIENT_ID,
